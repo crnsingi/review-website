@@ -5,3 +5,4 @@ import mongoose from "mongoose";
 import cors from 'cors';
 
 const app = express();
+app.use(cors());
