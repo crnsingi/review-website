@@ -19,9 +19,14 @@ router.post('/reviews', async (req, res) =>{
     });
 
     try { 
-        const newreview = await review.save();
+        const newReview = await review.save();
+        res.status(201).json(newReview);
+    } catch (err) {
+        res.status(400).json({ message: err.message});
     }
 })
+
+export default router;
 
 
 
