@@ -17,6 +17,10 @@ router.post('/reviews', async (req, res) =>{
         content: req.body.content,
         rating: req.body.rating,
     });
+
+    try { 
+        const newreview = await review.save();
+    }
 })
 
 
