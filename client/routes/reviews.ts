@@ -2,14 +2,22 @@ import express from "express";
 const router = express.Router();
 import Review from "../models/Review";
 
-router.get('/review', async (req, res) => {
-    try{
+router.get('/reviews', async (req, res) => {
+    try {
         const reviews = await Review.find();
         res.json(reviews);
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
 });
+
+router.post('/reviews', async (req, res) =>{
+    const review = new Review({
+        author: req.body.author,
+        content: req.body.content,
+        rating: req.body.rating,
+    });
+})
 
 
 
