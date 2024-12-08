@@ -25,6 +25,11 @@ const Home: React.FC = () => {
         <div>
             <h1>Reviews</h1>
             <Link to="add-reviews">Add Review</Link>
+            <ul>
+                {reviews.map((review) => (
+                    
+                ))}
+            </ul>
         </div>
     )
 
