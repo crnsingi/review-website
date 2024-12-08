@@ -7,6 +7,7 @@ const App: React.FC = () => {
     <Router>
       <Switch>
         <Route path="/" exact component={Home} />
+        <Routh path="/add-review" component={AddReview} />
       </Switch>
     </Router>
   )
