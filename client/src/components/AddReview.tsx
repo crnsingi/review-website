@@ -7,5 +7,8 @@ const AddReview: React.FC = () => {
     const [content, setContent] = useState(''); 
     const [rating, setRating] = useState('');
     const history = useHistory();
-}
+};
 
+return ( 
+    
+)
