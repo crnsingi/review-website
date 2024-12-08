@@ -8,3 +8,7 @@ interface Review {
     rating: number;
     _id: string;
 }
+
+const Home: React.FC = () => {
+    
+}
