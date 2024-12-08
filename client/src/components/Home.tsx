@@ -12,4 +12,8 @@ interface Review {
 const Home: React.FC = () => {
     const [reviews, setReviews] = useState<Review[]>([]);
 
+    useEffect(() => {
+        
+    })
+
 }
