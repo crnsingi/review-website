@@ -27,7 +27,9 @@ const Home: React.FC = () => {
             <Link to="add-reviews">Add Review</Link>
             <ul>
                 {reviews.map((review) => (
-                    
+                    <li key={review._id}>
+
+                    </li>
                 ))}
             </ul>
         </div>
