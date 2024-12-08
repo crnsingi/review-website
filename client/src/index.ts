@@ -4,6 +4,10 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from 'cors';
 
+import reviewRoutes from './routes/reviews'; 
+app.use('/api', reviewRoutes);
+
+
 const app = express();
 app.use(cors());
 app.use(express.json());
