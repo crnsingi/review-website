@@ -29,11 +29,11 @@ const Home: React.FC = () => {
                 {reviews.map((review) => (
                     <li key={review._id}>
                         {review.author}: {review.content} ({review.rating}/5)
-
                     </li>
                 ))}
             </ul>
         </div>
-    )
+    );
+};
 
-}
+export default Home;
