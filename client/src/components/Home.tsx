@@ -24,6 +24,7 @@ const Home: React.FC = () => {
     return ( 
         <div>
             <h1>Reviews</h1>
+            <Link to="add-reviews">Add Review</Link>
         </div>
     )
 
