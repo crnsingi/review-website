@@ -18,6 +18,7 @@ const Home: React.FC = () => {
             setReviews(res.data);
         };
 
-    })
+        fetchReviews();
+    }, [])
 
 }
