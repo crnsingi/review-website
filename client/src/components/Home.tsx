@@ -15,8 +15,8 @@ const Home: React.FC = () => {
     useEffect(() => {
         const fetchReviews = async () => {
             const res = await axios.get('/api/reviews');
-
-        }
+            setReviews(res.data);
+        };
 
     })
 
