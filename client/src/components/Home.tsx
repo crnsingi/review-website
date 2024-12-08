@@ -19,6 +19,12 @@ const Home: React.FC = () => {
         };
 
         fetchReviews();
-    }, [])
+    }, []);
+
+    return ( 
+        <div>
+            <h1>Reviews</h1>
+        </div>
+    )
 
 }
