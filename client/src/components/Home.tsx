@@ -13,7 +13,10 @@ const Home: React.FC = () => {
     const [reviews, setReviews] = useState<Review[]>([]);
 
     useEffect(() => {
-        
+        const fetchReviews = async () => {
+            
+        }
+
     })
 
 }
