@@ -1,5 +1,6 @@
-import { Router } from 'express';
 import React from 'react';
+import { Router } from 'express';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 const App: React.FC = () => {
