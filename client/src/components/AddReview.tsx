@@ -6,5 +6,6 @@ const AddReview: React.FC = () => {
     const [author, setAuthor] = useState('');
     const [content, setContent] = useState(''); 
     const [rating, setRating] = useState('');
+    const history = useHistory();
 }
 
